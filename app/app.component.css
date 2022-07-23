@@ -1,0 +1,73 @@
+body {
+  margin:0px;
+  padding:0px;
+}
+
+.Individual_Item{
+  width:60vw;
+  height:50vh;
+  background-color: rgb(255, 255, 255);
+  margin-top: 25vh;
+  margin-left: 20vw;
+  box-sizing: border-box;
+  overflow-y:scroll;
+  scroll-behavior: smooth;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  background: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.new_item{
+  width:100;
+  justify-content: center;
+  text-align: center;
+  background-color: lightblue;
+  padding:12px;
+  border-bottom: 3px dashed darkblue;
+}
+ul li:nth-child(1) {
+  text-align: center;
+  height:40px;
+  color: #cfb20d;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 4px;
+  border-bottom: 2px solid rgb(2, 2, 10);
+}
+
+ul li:nth-child(2) {
+  text-align: center;
+  height:43px;
+  color: #b5c015;
+  font-size: 30px;
+  border-bottom: 2px solid rgb(7, 7, 22);
+}
+
+ul li:nth-child(2) button{width: 50px; height: 50px; background-color: lightblue; color: white;}
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}

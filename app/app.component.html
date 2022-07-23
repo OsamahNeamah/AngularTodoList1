@@ -1,0 +1,10 @@
+<div  class="Individual_Item">
+  <div class="new_item">
+    <input type="text" [(ngModel)]="new">
+    <button type="button" (click)="addItem()">Add New</button>
+  </div>
+  <ul *ngFor=" let item of items" >
+    <li>{{ item.title }}</li>
+    <li><button class="delete" (click)="deleteItem(item.id)">X</button></li>
+    </ul>
+  </div>
